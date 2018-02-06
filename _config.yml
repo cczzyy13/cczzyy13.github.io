@@ -13,14 +13,14 @@ title                    : "CZY's Site"
 title_separator          : "-"
 name                     : "CZY"
 description              : "Welcome to know me ~"
-url                      : # the base hostname & protocol for your site e.g. "https://cczzyy13.github.io"
-baseurl                  : # the subpath of your site, e.g. "/docs"
-repository               : # GitHub username/repo-name e.g. "cczzyy13/cczzyy13.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+url                      : "https://cczzyy13.github.io" # the base hostname & protocol for your site e.g.
+baseurl                  : "/docs" # the subpath of your site, e.g.
+repository               : "cczzyy13/cczzyy13.github.io" # GitHub username/repo-name e.g.
+teaser                   : "/assets/images/paint.jpg" # path of fallback teaser image, e.g.
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "google-plus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -84,11 +84,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "CZY"
+  avatar           : # path of avatar image, e.g. "/assets/images/headpictures.jpg"
+  bio              : "welcome to know me ~"
+  location         : "Nanjing,Jiangsu"
+  email            : "zychen95@163.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
