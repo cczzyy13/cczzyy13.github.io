@@ -5,22 +5,23 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "CZY's Site"
+title                    : "CZY's WebSite"
 title_separator          : "-"
 name                     : "CZY"
-description              : "Welcome to know me ~"
-url                      : "https://cczzyy13.github.io" # the base hostname & protocol for your site e.g.
-baseurl                  : "/docs" # the subpath of your site, e.g.
-repository               : "cczzyy13/cczzyy13.github.io" # GitHub username/repo-name e.g.
-teaser                   : "/assets/images/paint.jpg" # path of fallback teaser image, e.g.
+description              : "An amazing website."
+url                      : "https://cczzyy13.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "cczzyy13/cczzyy13.github.io"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "google-plus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -32,7 +33,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
+  branch                 : "master"
   commitMessage          : # "New comment."
   filename               : # comment-{@timestamp}
   format                 : # "yml"
@@ -51,8 +52,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 
 # SEO Related
 google_site_verification :
@@ -85,23 +86,23 @@ analytics:
 # Site Author
 author:
   name             : "CZY"
-  avatar           : # path of avatar image, e.g. "/assets/images/headpictures.jpg"
-  bio              : "welcome to know me ~"
+  avatar           : "/images/header.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "welcome to know me ~."
   location         : "Nanjing,Jiangsu"
-  email            : "zychen95@163.com"
-  uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
+  email            :
+  uri              : "https://cczzyy13.github.io"
+  home             : "https://cczzyy13.github.io" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://github.com/cczzyy13"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "https://www.instagram.com/chenzhongy95"
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
@@ -111,7 +112,7 @@ author:
   tumblr           :
   twitter          :
   vine             :
-  weibo            :
+  weibo            : "https://weibo.com/2710831540/profile?topnav=1&wvr=6"
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
@@ -183,7 +184,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
