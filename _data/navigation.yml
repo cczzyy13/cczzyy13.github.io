@@ -1,12 +1,10 @@
 # main links
 main:
-  - title: "博客主题"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "博客相关"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "关于我"
+    url: /随笔/关于我
+  - title: "分类"
+    url: /categories/
+  - title: "标签"
+    url: /tags/
+  - title: "时间"
+    url: /year-archive/

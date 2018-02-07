@@ -13,17 +13,17 @@ locale                   : "zh-CN"
 title                    : "CZY's WebSite"
 title_separator          : "-"
 name                     : "CZY"
-description              : "An amazing website."
+description              : "Welcome to my site"
 url                      : "https://cczzyy13.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "cczzyy13/cczzyy13.github.io"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : "cczzyy13/cczzyy13.github.io"# GitHub username/repo-name
+teaser                   : # path of fallback teaser image
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 100
 comments:
-  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "cczzyy13" 
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -62,13 +62,13 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+# twitter:
+#   username               :
+# facebook:
+#   username               :
+#   app_id                 :
+#   publisher              :
+# og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -87,11 +87,11 @@ analytics:
 author:
   name             : "CZY"
   avatar           : "/images/header.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "welcome to know me ~."
+  bio              : "Nothing's difficult, Everything's a challenge. Through adversity to the stars. I fight!"
   location         : "Nanjing,Jiangsu"
   email            :
   uri              : "https://cczzyy13.github.io"
-  home             : "https://cczzyy13.github.io" # null (default), "absolute or relative url to link to author home"
+  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -220,6 +220,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+year_archive:
+  type: liquid
+  path: /year-archive/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -251,6 +254,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
-      share: true
+      comments: true
+      share: true # true
       related: true
