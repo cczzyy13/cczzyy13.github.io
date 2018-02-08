@@ -14,7 +14,7 @@ title                    : "CZY's WebSite"
 title_separator          : "-"
 name                     : "CZY"
 description              : "Welcome to my site"
-url                      : "czy13.com"#  the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : #  the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cczzyy13/cczzyy13.github.io"# GitHub username/repo-name
 teaser                   : # path of fallback teaser image
