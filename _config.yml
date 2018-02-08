@@ -14,7 +14,7 @@ title                    : "CZY's WebSite"
 title_separator          : "-"
 name                     : "CZY"
 description              : "Welcome to my site"
-url                      : #  the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://cczzyy13.github.io"#  the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cczzyy13/cczzyy13.github.io"# GitHub username/repo-name
 teaser                   : # path of fallback teaser image
@@ -90,8 +90,8 @@ author:
   bio              : "Nothing's difficult, Everything's a challenge. Through adversity to the stars. I fight!"
   location         : "Nanjing,Jiangsu"
   email            :
-  uri              : "https://cczzyy13.github.io"
-  home             : "https://cczzyy13.github.io" # null (default), "absolute or relative url to link to author home"
+  uri              : "czy13.com"
+  home             : "czy13.com" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
