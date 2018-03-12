@@ -19,7 +19,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cczzyy13/cczzyy13.github.io" # GitHub username/repo-name
 teaser                   : # path of fallback teaser image
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 100
+words_per_minute         : 20
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:

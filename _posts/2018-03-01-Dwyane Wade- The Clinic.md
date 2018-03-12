@@ -1,7 +1,7 @@
 ---
 title: "韦德生涯高光集锦"
 categories:
-- Dwade
+- videos
 tags:
 - blogs
 excerpt: "韦德最爱的十一分钟生涯集锦~"
