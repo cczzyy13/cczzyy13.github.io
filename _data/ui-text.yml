@@ -321,7 +321,7 @@ zh: &DEFAULT_ZH_HANS
   breadcrumb_home_label      : "首页"
   breadcrumb_separator       : "/"
   menu_label                 : "切换菜单"
-  toc_label                  : "在本页上"
+  toc_label                  : "目录"
   ext_link_label             : "直接链接"
   less_than                  : "少于"
   minute_read                : "分钟读完"

@@ -4,6 +4,7 @@ categories:
 - 机器学习
 tags:
 - 算法
+toc: true
 ---
 
 {% include lib/mathjax.html %}

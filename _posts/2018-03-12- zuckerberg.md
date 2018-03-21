@@ -9,7 +9,7 @@ excerpt: "Find the courage to make life a blessing~"
 
 
 
-视频是基于 viemo 上传的，因此国内用户需要翻墙才能看到。
+视频是基于 vimeo 上传的，因此国内用户需要翻墙才能看到。
 
 
 
