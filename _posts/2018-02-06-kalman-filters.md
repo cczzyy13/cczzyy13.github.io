@@ -188,7 +188,7 @@ $$\sigma^2 = \frac{\sigma_x^2  \sigma_z^2}{\sigma_z^2 + \sigma_x^2} =\sigma_x^2 
 
 ## 部分公式推导
 
-### 推导 \\(P(n | n)\\)
+### 推导 P(n | n)
 
 根据定义
 
