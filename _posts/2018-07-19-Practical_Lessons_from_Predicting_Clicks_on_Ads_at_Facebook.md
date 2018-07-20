@@ -4,17 +4,19 @@ categories:
 - 机器学习
 tags:
 - 算法
+- 学习笔记
+toc: true
 ---
 
 {% include lib/mathjax.html %}
 
 [论文链接](https://github.com/cczzyy13/book/blob/master/Practical_Lessons_from_Predicting_Clicks_on_Ads_at_Facebook.pdf)
 
-## 一、简介
+## 1、简介
 
 这篇文章是工业界点击率预估方向的一篇重要论文（Facebook）。文章提出 GBDT+LR 的混合模型，使用 GBDT 对特征值进行加工转换，再使用 LR 线性分类器对转换后的特征进行拟合。
 
-## 二、实验设置
+## 2、实验设置
 
 文章选取 2013 年四季度随机的一周的数据作为数据集，并提出 "online joiner" 系统将离线数据转化为在线数据。
 
@@ -32,7 +34,9 @@ Calibration 定义为平均预估CTR与经验平均CTR的比值，也就是预�
 
 Calibration越接近1，模型越好。
 
-## 三、模型结构
+## 3、模型
+
+### 3.1 模型结构
 
 Boosted decision trees  串联一个  probabilistic sparse linear classifier.
 
@@ -60,7 +64,7 @@ SGD（Stochastic Gradient Descent）算法的解该问题的迭代公式为：
 
 ![](https://ws3.sinaimg.cn/large/006tKfTcgy1ftfgnnmaymj30u005kdgw.jpg)
 
-### 决策树特征转化
+### 3.2 决策树特征转化
 
 一般来说有两种简单的方法转化得到线性分类器的输入特征：
 
@@ -72,11 +76,11 @@ SGD（Stochastic Gradient Descent）算法的解该问题的迭代公式为：
 
 ![](https://ws4.sinaimg.cn/large/006tKfTcgy1ftfgyrvbnrj30xq0degoh.jpg)
 
-### 数据新鲜度
+### 3.3 数据新鲜度
 
 实验证明数据越新鲜，模型的预测结果越好，因此，可以对 GBDT 模型部分进行日级别的训练更新，对Linear classifier部分，进行 online real-time 的训练。
 
-### 在线线性分类器
+### 3.4 在线线性分类器
 
 对于 LR + SGD 方法的学习率参数部分，比较了以下5种选择：
 
@@ -90,7 +94,7 @@ LR 模型参数更少，缓存更优计算更快。
 
 BOPR 模型预测了点击概率的整体分布，得到的结果更多。
 
-## 四、Online data joiner
+## 4、Online data joiner
 
 这个系统可以生成 real-time 的训练数据流来进行 online learning。
 
@@ -98,15 +102,15 @@ BOPR 模型预测了点击概率的整体分布，得到的结果更多。
 
 ![](https://ws1.sinaimg.cn/large/006tKfTcgy1ftfhf03a2gj30vo0jujtu.jpg)
 
-## 五、Containing memory and latency
+## 5、Containing memory and latency
 
-### 决策树的数量
+### 5.1 决策树的数量
 
 ![](https://ws2.sinaimg.cn/large/006tKfTcgy1ftfhj4wv7uj30yc0p2wih.jpg)
 
 大部分的 NE 由前 500 棵树贡献。
 
-### 特征的重要性
+### 5.2 特征的重要性
 
 特征分为历史特征和情境特征。
 
@@ -118,9 +122,9 @@ BOPR 模型预测了点击概率的整体分布，得到的结果更多。
 
 实验表明历史特征比情境特征的贡献更大，但是对于cold start(新用户或者新广告)来说，情境特征是不可或缺的。
 
-## 大规模数据的取样
+## 6、大规模数据的取样
 
-### uniform subsampling
+### 6.1 uniform subsampling
 
 对正负样本使用相同的取样率，对于不同的取样率，实验结果如下：
 
@@ -128,11 +132,11 @@ BOPR 模型预测了点击概率的整体分布，得到的结果更多。
 
 大约 10% 的数据便可贡献大部分的 NE。
 
-### negative down sampling
+### 6.2 negative down sampling
 
 对负样本进行降采样，实验表明负样本降采样对模型训练的效果提升较大。可以选取一个合适的降采样率。
 
-### 模型校准
+### 6.3 模型校准
 
 由于采样方式会带来偏差，需要对预测结果进行纠正校准：
 
