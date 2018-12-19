@@ -1,10 +1,6 @@
 ---
 layout: default
 ---
-{% if page.music-id %}
-  {% include lib/cloud-music.html %}
-{% endif %} 
-
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -16,6 +12,10 @@ layout: default
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
+
+{% if page.music-id %}
+  {% include lib/cloud-music.html %}
+{% endif %} 
 
 <div id="main" role="main">
   {% include sidebar.html %}
