@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% if page.music-id %}
+  {% include cloud-music.html %}
+{% endif %} 
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
