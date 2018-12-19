@@ -257,4 +257,3 @@ defaults:
       comments: true
       share: true # true
       related: true
-      music-id: true
